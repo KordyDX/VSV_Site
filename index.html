@@ -1,28 +1,77 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="">
-<title>VSV</title>
-</head>
-<body>
-    <nav>
-        <div class="navButton">
-            <button class="sandwich"></button>
-        </div>
+<html lang="cs">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Domovská stránka, Vzdělávací středisko
+            VDF">
 
-        <div class="navMenu">
-            <div class="domu"></div>
-            <div class="kontakty"></div>
-            <div class="sluzby"></div>
-            <div class="fotogalerie"></div>
-        </div>
+        <link rel="icon" type="image/x-icon" href="/Group.svg">
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet"
+            href="https://unpkg.com/leaflet@1.9.3/dist/leaflet.css"
+            integrity="sha256-kLaT2GOSpHechhsozzB+flnD+zUyjE2LlfWPgU04xyI="
+            crossorigin=""/>
+        <title>VŠVDF</title>
+    </head>
+    <body>
 
-        <div class="navLogo"></div>
-    </nav>
+        <nav>
+            <div class="navButton">
+                <button class="sandwich"></button>
+            </div>
 
-    <section></section>
-</body>
+            <div class="navMenu">
+                <div class="domu"></div>
+                <div class="kontakty"></div>
+                <div class="sluzby"></div>
+                <div class="fotogalerie"></div>
+            </div>
+
+            <div class="navLogo"></div>
+        </nav>
+
+        <section>
+            <header>
+                <h1>Vzdělávací středisko VDF</h1>
+                <div class="solidGray"></div>
+                <img src="" alt="">
+            </header>
+            <div class="content">
+                <p>Vítáme Vás na stránkách naší školy - Vyšší odborné školy,
+                    Střední průmyslové školy a Střední odborné školy služeb a
+                    cestovního ruchu ve Varnsdorfu, které se věnují vzdělávacímu
+                    středisku a doprovodných služeb. Nabízíme Vám jen ty
+                    nejkvalitnější služby v daném oboru. Neváhejte a využijte
+                    těchto služeb, které realizujeme v rámci vzdělávání našich
+                    žáků. Náš personál je Vám vždy plně k dispozici. Naší
+                    předností je neustálé zkvalitňování a vylepšování námi
+                    nabízených služeb. Důkazem je stále vzrůstající počet
+                    spokojených zákazníků.</p>
+            </div>
+        </section>
+
+        <footer>
+            <div class="adresa"><p>Adresa:
+                    Karlova 3317, 407 47 Varnsdorf</p><p>petra.sedlackova@skolavdf.cz</p></div>
+            <div class="cisla">
+                <p>Recepce: +420 775 475 549</p>
+                <p>Pevná linka: +420 412 331 160</p>
+                <p>Restaurace: +420 739 096 172</p>
+                <p>Kancelář: +420 739 418 147</p>
+            </div>
+            <div id="map"></div>
+            <div class="corp"><p>Vyšší odborná škola, Střední průmyslová škola a
+                    Střední odborná škola služeb a cestovního ruchu, Varnsdorf,
+                    příspěvková organizace</p></div>
+            <div class="copyright">© 2023 Všechna práva vyhrazena.</div>
+        </footer>
+        <!-- Na konci body, údajně zrychluje load -->
+        <script src="https://unpkg.com/leaflet@1.9.3/dist/leaflet.js"
+            integrity="sha256-WBkoXOwTeyKclOHuWtc+i2uENFpDZ9YPdf5Hf+D7ewM="
+            crossorigin=""></script>
+        <script src="script.js"></script>
+
+    </body>
 </html>
