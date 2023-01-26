@@ -1,5 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    color: black;
+    & a {
+        color: white;
+        text-decoration: none;
+    }
+}
+
+nav {
+    display: flex;
+    height: 108px;
+    align-items: center;
+
+    & .menu {
+        background-color: transparent;
+        border: 0;
+        color: transparent;
+        text-decoration: none;
+        padding: 0 25px 0 25px;
+        & :hover {
+            cursor: pointer;
+        }
+        & img {
+            width: 50px;
+            height: auto;
+        }
+    }
+
+    & .navMenu {
+        display: flex;
+        height: 100%;
+        & .domu {
+            background-color: #95C11F;
+        }
+        & .kontakty {
+            background-color: #F09D2A;
+        }
+        & .sluzby {
+            background-color: #009FE3;
+        }
+        & .fotogalerie {
+            background-color: #D100E3;
+        }
+    }
+
+    & .menuElement {
+        width: 11em;
+        height: 100%;
+        display: flex;
+        flex-flow: column;
+        justify-content: center;
+        align-items: center;
+        & p {
+            margin: 0;
+        }
+    }
+
+    & .menuElement img {
+        height: 32px;
+        width: 32px;
+    }
+
+    & .navLogo {
+        & img {
+            width: auto;
+            height: 64px;
+            margin-right: 10px;
+        }
+
+        margin-left: auto;
+    }
+}
+
 #map {
     height: 320px;
     width: 400px;
     background-color: gray;
+}
+
+header {
+    height: 300px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    & .heading {
+        position: absolute;
+        color: white;
+        z-index: 3;
+        font-size: 3rem;
+    }
+
+    & .solidGray {
+        width: 100%;
+        height: 300px;
+        background-color:
+            black;
+        opacity: 70%;
+        z-index: 2;
+        position: absolute;
+    }
+
+    & .background {
+        z-index: 1;
+        height: 300px;
+        width: 100%;
+        object-fit: cover;
+    }
 }
