@@ -1,28 +1,37 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
 html,
 body {
+  transition: all 10s;
+  min-height: 100vh;
+  display: flex;
+  flex-flow: column;
   margin: 0;
   padding: 0;
   font-family: "Roboto", sans-serif;
-  color: black;
+  color: white;
 }
 html a,
 body a {
   color: white;
-  text-decoration: none;
+}
+html p,
+body p {
+  font-size: 1.3rem;
 }
 
 nav {
   display: flex;
-  height: 108px;
+  height: 90px;
   align-items: center;
+}
+nav a {
+  color: white;
+  text-decoration: none;
 }
 nav .menu {
   background-color: transparent;
   border: 0;
-  color: transparent;
-  text-decoration: none;
-  padding: 0 25px 0 25px;
+  padding: 0 10px 0 10px;
 }
 nav .menu :hover {
   cursor: pointer;
@@ -31,20 +40,21 @@ nav .menu img {
   width: 50px;
   height: auto;
 }
-nav .navMenu {
+nav #navMenu {
+  transition: all 10s;
   display: flex;
   height: 100%;
 }
-nav .navMenu .domu {
+nav #navMenu .domu {
   background-color: #95C11F;
 }
-nav .navMenu .kontakty {
+nav #navMenu .kontakty {
   background-color: #F09D2A;
 }
-nav .navMenu .sluzby {
+nav #navMenu .sluzby {
   background-color: #009FE3;
 }
-nav .navMenu .fotogalerie {
+nav #navMenu .fotogalerie {
   background-color: #D100E3;
 }
 nav .menuElement {
@@ -67,12 +77,12 @@ nav .navLogo {
 }
 nav .navLogo img {
   width: auto;
-  height: 64px;
+  height: 56px;
   margin-right: 10px;
 }
 
 #map {
-  height: 320px;
+  height: 280px;
   width: 400px;
   background-color: gray;
 }
@@ -104,4 +114,55 @@ header .background {
   width: 100%;
   -o-object-fit: cover;
      object-fit: cover;
+}
+
+section {
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+}
+section p {
+  color: black;
+}
+section .content {
+  inline-size: 900px;
+  text-align: left;
+}
+
+footer {
+  padding-top: 29px;
+  height: 100%;
+  margin-top: auto;
+  display: inline-grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  width: 100%;
+  justify-items: center;
+  justify-content: center;
+  align-items: center;
+  background-color: #242424;
+}
+footer p {
+  margin: 0;
+}
+footer .left {
+  display: flex;
+  flex-flow: column;
+  gap: 20px;
+}
+footer .left .adresa {
+  text-align: left;
+}
+footer .left .cisla {
+  text-align: right;
+}
+footer .right {
+  text-align: left;
+  inline-size: 400px;
+}
+
+.copyright {
+  direction: rtl;
+  padding: 5px;
+  background-color: #242424;
 }

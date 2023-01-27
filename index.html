@@ -19,34 +19,35 @@
 
         <nav>
             <div class="navButton">
-                <button class="menu">
+                <button class="menu" onclick="menu()">
                     <img src="/images/svg/menu-rounded.svg" alt="menu">
                 </button>
             </div>
-
-            <div class="navMenu">
-                <a href="">
+<!-- FINISH SLIDE ANIMATION -->
+            <div id="navMenu" style="position: absolute;transition: all 10s; right: 105%">
+                <a href="/index.html">
                     <div class="domu menuElement">
                         <img src="/images/svg/house-chimney.svg" alt="domu">
                         <p>Domů</p>
                     </div>
                 </a>
-                <a href="">
+                <a href="/html/kontakty.html">
                     <div class="kontakty menuElement">
                         <img src="/images/svg/contact-support-rounded.svg"
                             alt="kontakty">
                         <p>Kontakty</p>
                     </div>
                 </a>
-                <a href="">
+                <a href="/html/sluzby.html">
                     <div class="sluzby menuElement">
                         <img src="/images/svg/list-box.svg" alt="sluzby">
                         <p>Služby</p>
                     </div>
                 </a>
-                <a href="">
+                <a href="/html/fotogalerie.html">
                     <div class="fotogalerie menuElement">
-                        <img src="/images/svg/photo-camera.svg" alt="fotogalerie">
+                        <img src="/images/svg/photo-camera.svg"
+                            alt="fotogalerie">
                         <p>Fotogalerie</p>
                     </div>
                 </a>
@@ -78,21 +79,36 @@
         </section>
 
         <footer>
-            <div class="adresa"><p>Adresa:
-                    Karlova 3317, 407 47 Varnsdorf</p><p>petra.sedlackova@skolavdf.cz</p></div>
-            <div class="cisla">
-                <p>Recepce: +420 775 475 549</p>
-                <p>Pevná linka: +420 412 331 160</p>
-                <p>Restaurace: +420 739 096 172</p>
-                <p>Kancelář: +420 739 418 147</p>
+            <div class="left">
+                <div class="adresa"><p><b>Adresa:</b>
+                        <a href="http://maps.google.com/?q=Karlova 3317, 407 47
+                            Varnsdorf">Karlova 3317, 407 47 Varnsdorf</p></a><br><a
+                        href="mailto:petra.sedlackova@skolavdf.cz"><p><b>petra.sedlackova@skolavdf.cz</b></p></a></div>
+                <div class="cisla">
+                    <p>Recepce: <a href="tel:+420-775-475-549"><b>+420 775 475
+                                549</b></a></p>
+                    <p>Pevná linka: <a href="tel:+420-412-331-160"><b>+420 412
+                                331 160</b></a></p>
+                    <p>Restaurace: <a href="tel:+420-739-096-172"><b>+420 739
+                                096 172</b></a></p>
+                    <p>Kancelář: <a href="tel:+420-739-418-147"><b>+420 739 418
+                                147</b></a></p>
+                </div>
             </div>
-            <div id="map"></div>
-            <div class="corp"><p>Vyšší odborná škola, Střední průmyslová škola a
-                    Střední odborná škola služeb a cestovního ruchu, Varnsdorf,
-                    příspěvková organizace</p></div>
-            <div class="copyright">© 2023 Všechna práva vyhrazena.</div>
+            <div class="mid">
+                <div id="map"></div>
+            </div>
+            <div class="right">
+                <div class="corp"><p>Vyšší odborná škola, Střední průmyslová
+                        škola a
+                        Střední odborná škola služeb a cestovního ruchu,
+                        Varnsdorf,
+                        příspěvková organizace</p></div>
+            </div>
         </footer>
-        <!-- Na konci body, údajně zrychluje load -->
+        <div class="copyright">2023© Made with ❤️ by <a
+                href="https://github.com/KordyDX"><b>Kordy</b></a></div>
+        <!-- Na konci <body>, údajně zrychluje load -->
         <script src="https://unpkg.com/leaflet@1.9.3/dist/leaflet.js"
             integrity="sha256-WBkoXOwTeyKclOHuWtc+i2uENFpDZ9YPdf5Hf+D7ewM="
             crossorigin=""></script>
