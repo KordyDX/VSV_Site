@@ -1,7 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
 html,
 body {
-  transition: all 10s;
   min-height: 100vh;
   display: flex;
   flex-flow: column;
@@ -28,34 +27,47 @@ nav a {
   color: white;
   text-decoration: none;
 }
-nav .menu {
+nav .navButton {
+  transition: all 0.2s cubic-bezier(0.45, 0, 0.55, 1);
+}
+nav .navButton .menu {
   background-color: transparent;
   border: 0;
   padding: 0 10px 0 10px;
+  transition: all 0.2s cubic-bezier(0.45, 0, 0.55, 1);
 }
-nav .menu :hover {
+nav .navButton .menu :hover {
   cursor: pointer;
 }
-nav .menu img {
+nav .navButton .menu img {
   width: 50px;
   height: auto;
 }
-nav #navMenu {
-  transition: all 10s;
+nav .navButton .menuTurned {
+  transform: rotate(90deg);
+}
+nav .sideNav {
+  overflow-x: hidden;
+  width: 0px;
   display: flex;
   height: 100%;
+  transition: all 0.5s cubic-bezier(0.45, 0, 0.55, 1);
 }
-nav #navMenu .domu {
+nav .sideNav .domu {
   background-color: #95C11F;
 }
-nav #navMenu .kontakty {
+nav .sideNav .kontakty {
   background-color: #F09D2A;
 }
-nav #navMenu .sluzby {
+nav .sideNav .sluzby {
   background-color: #009FE3;
 }
-nav #navMenu .fotogalerie {
+nav .sideNav .fotogalerie {
   background-color: #D100E3;
+}
+nav .menuOpened {
+  width: 704px !important;
+  transition: all 0.5s cubic-bezier(0.45, 0, 0.55, 1);
 }
 nav .menuElement {
   width: 11em;
@@ -127,6 +139,10 @@ section p {
 }
 section .content {
   inline-size: 900px;
+  text-align: left;
+}
+section .contentK {
+  inline-size: 532px;
   text-align: left;
 }
 

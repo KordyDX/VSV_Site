@@ -6,15 +6,9 @@ L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
 
 var marker = L.marker([50.900760785285, 14.62497761563909], {
     title: "Vzdělávací středisko VDF",
-
 }).addTo(map);
 
 function menu(){
-    if (document.getElementById("navMenu").style.position == "absolute") {
-        document.getElementById("navMenu").style.position="static";
-        document.getElementById("navMenu").style.right="";
-    } else {
-        document.getElementById("navMenu").style.position="absolute";
-        document.getElementById("navMenu").style.right="105%";
-    }
+    document.getElementById("navMenu").classList.toggle("menuOpened");
+    document.getElementById("menu").classList.toggle("menuTurned");
 }

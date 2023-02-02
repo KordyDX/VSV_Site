@@ -2,7 +2,6 @@
 
 html,
 body {
-    transition: all 10s;
     min-height: 100vh;
     display: flex;
     flex-flow: column;
@@ -30,23 +29,34 @@ nav {
         text-decoration: none;
     }
 
-    .menu {
-        background-color: transparent;
-        border: 0;
-        padding: 0 10px 0 10px;
+    .navButton {
+        transition: all 0.2s cubic-bezier(0.45, 0, 0.55, 1);
 
-        :hover {
-            cursor: pointer;
+        .menu {
+            background-color: transparent;
+            border: 0;
+            padding: 0 10px 0 10px;
+
+            :hover {
+                cursor: pointer;
+            }
+
+            img {
+                width: 50px;
+                height: auto;
+            }
+
+            transition: all 0.2s cubic-bezier(0.45, 0, 0.55, 1);
+
         }
-
-        img {
-            width: 50px;
-            height: auto;
+        .menuTurned {
+            transform: rotate(90deg);
         }
     }
 
-    #navMenu {
-        transition: all 10s;
+    .sideNav {
+        overflow-x: hidden;
+        width: 0px;
         display: flex;
         height: 100%;
 
@@ -65,6 +75,16 @@ nav {
         .fotogalerie {
             background-color: #D100E3;
         }
+
+        transition: all 0.5s cubic-bezier(0.45, 0, 0.55, 1);
+
+
+
+    }
+
+    .menuOpened {
+        width: 704px !important;
+        transition: all 0.5s cubic-bezier(0.45, 0, 0.55, 1);
     }
 
     .menuElement {
@@ -94,6 +114,7 @@ nav {
 
         margin-left: auto;
     }
+
 }
 
 #map {
@@ -146,6 +167,10 @@ section {
 
     .content {
         inline-size: 900px;
+        text-align: left;
+    }
+    .contentK {
+        inline-size: 532px;
         text-align: left;
     }
 }

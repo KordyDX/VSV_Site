@@ -7,7 +7,7 @@
         <meta name="description" content="Domovská stránka, Vzdělávací středisko
             VDF">
 
-        <link rel="icon" type="image/x-icon" href="/Group.svg">
+        <link rel="icon" type="image/x-icon" href="/images/svg/logo.svg">
         <link rel="stylesheet" href="style.css">
         <link rel="stylesheet"
             href="https://unpkg.com/leaflet@1.9.3/dist/leaflet.css"
@@ -19,42 +19,44 @@
 
         <nav>
             <div class="navButton">
-                <button class="menu" onclick="menu()">
-                    <img src="/images/svg/menu-rounded.svg" alt="menu">
+                <button id="menu" class="menu" onclick="menu()">
+                    <img src="/images/svg/menu-rounded.svg" alt="menu"
+                        draggable="false">
                 </button>
             </div>
-<!-- FINISH SLIDE ANIMATION -->
-            <div id="navMenu" style="position: absolute;transition: all 10s; right: 105%">
+            <div id="navMenu" class="sideNav">
                 <a href="/index.html">
                     <div class="domu menuElement">
-                        <img src="/images/svg/house-chimney.svg" alt="domu">
+                        <img src="/images/svg/house-chimney.svg" alt="domu"
+                            draggable="false">
                         <p>Domů</p>
                     </div>
                 </a>
                 <a href="/html/kontakty.html">
                     <div class="kontakty menuElement">
                         <img src="/images/svg/contact-support-rounded.svg"
-                            alt="kontakty">
+                            alt="kontakty" draggable="false">
                         <p>Kontakty</p>
                     </div>
                 </a>
                 <a href="/html/sluzby.html">
                     <div class="sluzby menuElement">
-                        <img src="/images/svg/list-box.svg" alt="sluzby">
+                        <img src="/images/svg/list-box.svg" alt="sluzby"
+                            draggable="false">
                         <p>Služby</p>
                     </div>
                 </a>
                 <a href="/html/fotogalerie.html">
                     <div class="fotogalerie menuElement">
                         <img src="/images/svg/photo-camera.svg"
-                            alt="fotogalerie">
+                            alt="fotogalerie" draggable="false">
                         <p>Fotogalerie</p>
                     </div>
                 </a>
             </div>
 
             <div class="navLogo">
-                <img src="/images/svg/logo.svg" alt="logo">
+                <img src="/images/svg/logo.svg" alt="logo" draggable="false">
             </div>
         </nav>
 
@@ -66,11 +68,15 @@
             </header>
             <div class="content">
                 <p>Vítáme Vás na stránkách naší školy - Vyšší odborné školy,
-                    Střední průmyslové školy a Střední odborné školy služeb a
-                    cestovního ruchu ve Varnsdorfu, které se věnují vzdělávacímu
+                    Střední průmyslové školy a Střední odborné školy služeb
+                    a
+                    cestovního ruchu ve Varnsdorfu, které se věnují
+                    vzdělávacímu
                     středisku a doprovodných služeb. Nabízíme Vám jen ty
-                    nejkvalitnější služby v daném oboru. Neváhejte a využijte
-                    těchto služeb, které realizujeme v rámci vzdělávání našich
+                    nejkvalitnější služby v daném oboru. Neváhejte a
+                    využijte
+                    těchto služeb, které realizujeme v rámci vzdělávání
+                    našich
                     žáků. Náš personál je Vám vždy plně k dispozici. Naší
                     předností je neustálé zkvalitňování a vylepšování námi
                     nabízených služeb. Důkazem je stále vzrůstající počet
