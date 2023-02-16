@@ -49,6 +49,7 @@ nav {
             transition: all 0.2s cubic-bezier(0.45, 0, 0.55, 1);
 
         }
+
         .menuTurned {
             transform: rotate(90deg);
         }
@@ -76,10 +77,39 @@ nav {
             background-color: #D100E3;
         }
 
+        .dropDown {
+            display: flex;
+            flex-flow: column;
+
+            a {
+                font-size: 1.3rem;
+                height: 30px;
+                color: black;
+            }
+
+            .dropDownElement {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                height: 40px;
+                border-top: 1px;
+                border-left: 0;
+                border-right: 0;
+                border-bottom: 0;
+                border-style: solid;
+                color: black;
+
+                &:hover {
+                    background-color: #009FE3;
+
+                    a {
+                        color: white;
+                    }
+                }
+            }
+        }
+
         transition: all 0.5s cubic-bezier(0.45, 0, 0.55, 1);
-
-
-
     }
 
     .menuOpened {
@@ -169,9 +199,17 @@ section {
         inline-size: 900px;
         text-align: left;
     }
-    .contentK {
-        inline-size: 532px;
+
+    .kontakty {
         text-align: left;
+
+        a {
+            color: black;
+        }
+
+        .cisla p {
+            margin: 0;
+        }
     }
 }
 

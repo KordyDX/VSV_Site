@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="cs">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Kontakty, Vzdělávací středisko
+            VDF">
+
+        <link rel="icon" type="image/x-icon" href="../images/svg/logo.svg">
+        <link rel="stylesheet" href="../style.css">
+        <link rel="stylesheet"
+            href="https://unpkg.com/leaflet@1.9.3/dist/leaflet.css"
+            integrity="sha256-kLaT2GOSpHechhsozzB+flnD+zUyjE2LlfWPgU04xyI="
+            crossorigin=""/>
+        <title>VŠVDF</title>
+    </head>
+    <body>
+
+        <nav>
+            <div class="navButton">
+                <button id="menu" class="menu" onclick="menu()">
+                    <img src="/images/svg/menu-rounded.svg" alt="menu"
+                        draggable="false">
+                </button>
+            </div>
+            <div id="navMenu" class="sideNav">
+                <a href="/index.html">
+                    <div class="domu menuElement">
+                        <img src="/images/svg/house-chimney.svg" alt="domu"
+                            draggable="false">
+                        <p>Domů</p>
+                    </div>
+                </a>
+                <a href="/html/kontakty.html">
+                    <div class="kontakty menuElement">
+                        <img src="/images/svg/contact-support-rounded.svg"
+                            alt="kontakty" draggable="false">
+                        <p>Kontakty</p>
+                    </div>
+                </a>
+                <a href="/html/sluzby.html">
+                    <div class="sluzby menuElement">
+                        <img src="/images/svg/list-box.svg" alt="sluzby"
+                            draggable="false">
+                        <p>Služby</p>
+                    </div>
+                </a>
+                <a href="/html/fotogalerie.html">
+                    <div class="fotogalerie menuElement">
+                        <img src="/images/svg/photo-camera.svg"
+                            alt="fotogalerie" draggable="false">
+                        <p>Fotogalerie</p>
+                    </div>
+                </a>
+            </div>
+
+            <div class="navLogo">
+                <img src="/images/svg/logo.svg" alt="logo" draggable="false">
+            </div>
+        </nav>
+
+        <section>
+            <header>
+                <h1 class="heading">Kontakty</h1>
+                <div class="solidGray"></div>
+                <img src="/images/jpg/doma.jpg" alt="doma" class="background">
+            </header>
+            <div class="contentK">
+                <p><b>Adresa Vzdělávacího střediska:</b>
+                    Karlova 3317, 407 47 Varnsdorf
+                    Zodpovědná osoba: Petra Sedláčková
+                    Email: petra.sedlackova@skolavdf.cz</p>
+                <p><b>Telefonní čísla:</b>
+                    Kancelář - +420 739 418 147
+                    Recepce - +420 775 475 549
+                    Pevná - +420 412 331 160</p>
+                <p><b>Fakturační adresa:</b>
+                    Vyšší odborná škola, Střední průmyslová škola a Střední
+                    odborná škola služeb a cestovního ruchu, Varnsdorf,
+                    Bratislavská 2166, příspěvková organizace
+                    Bratislavská 2166, 407 47 Varnsdorf
+                    IČ: 18383874</p>
+            </div>
+        </section>
+
+        <footer>
+            <div class="left">
+                <div class="adresa"><p><b>Adresa:</b>
+                        <a href="http://maps.google.com/?q=Karlova 3317, 407 47
+                            Varnsdorf">Karlova 3317, 407 47 Varnsdorf</p></a><br><a
+                        href="mailto:petra.sedlackova@skolavdf.cz"><p><b>petra.sedlackova@skolavdf.cz</b></p></a></div>
+                <div class="cisla">
+                    <p>Recepce: <a href="tel:+420-775-475-549"><b>+420 775 475
+                                549</b></a></p>
+                    <p>Pevná linka: <a href="tel:+420-412-331-160"><b>+420 412
+                                331 160</b></a></p>
+                    <p>Restaurace: <a href="tel:+420-739-096-172"><b>+420 739
+                                096 172</b></a></p>
+                    <p>Kancelář: <a href="tel:+420-739-418-147"><b>+420 739 418
+                                147</b></a></p>
+                </div>
+            </div>
+            <div class="mid">
+                <div id="map"></div>
+            </div>
+            <div class="right">
+                <div class="corp"><p>Vyšší odborná škola, Střední průmyslová
+                        škola a
+                        Střední odborná škola služeb a cestovního ruchu,
+                        Varnsdorf,
+                        příspěvková organizace</p></div>
+            </div>
+        </footer>
+        <div class="copyright">2023© Made with ❤️ by <a
+                href="https://github.com/KordyDX"><b>Kordy</b></a></div>
+        <!-- Na konci <body>, údajně zrychluje load -->
+        <script src="https://unpkg.com/leaflet@1.9.3/dist/leaflet.js"
+            integrity="sha256-WBkoXOwTeyKclOHuWtc+i2uENFpDZ9YPdf5Hf+D7ewM="
+            crossorigin=""></script>
+        <script src="../script.js"></script>
+
+    </body>
+</html>
